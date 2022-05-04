@@ -35,7 +35,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
             children: [
               new Image.network(
                   'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_480/https://erovet.eu/wp-content/uploads/2020/02/LOGO-EROVET-480x144.jpg'),
-         
+
               Container(
                 width: MediaQuery.of(context).size.width * 0.9,
                 height: MediaQuery.of(context).size.width * 0.2,
