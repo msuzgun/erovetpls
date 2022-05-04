@@ -34,17 +34,8 @@ class _AnaSayfaState extends State<AnaSayfa> {
           child: Column(
             children: [
               new Image.network(
-                  'https://erovet.eu/wp-content/uploads/2020/02/WEB-BOT-EROVET-300x103.png'),
-              Container(
-                decoration: new BoxDecoration(
-                    image: new DecorationImage(
-                      // Load image from assets
-                        image: new AssetImage('lib/logo.png'),
-                        // Make the image cover the whole area
-                        fit: BoxFit.cover)),
-                width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.width * 0.2,
-              ),
+                  'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_480/https://erovet.eu/wp-content/uploads/2020/02/LOGO-EROVET-480x144.jpg'),
+         
               Container(
                 width: MediaQuery.of(context).size.width * 0.9,
                 height: MediaQuery.of(context).size.width * 0.2,
