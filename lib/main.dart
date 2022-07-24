@@ -30,79 +30,88 @@ class _AnaSayfaState extends State<AnaSayfa> {
       title: 'Material App',
       home: Scaffold(
 
-        body: Center(
-          child: Column(
-            children: [
-              new Image.network(
-                  'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_480/https://erovet.eu/wp-content/uploads/2020/02/LOGO-EROVET-480x144.jpg'),
+        body: Container(
+          alignment: Alignment.center,
 
-              Container(
-                width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.width * 0.2,
-                child:   ElevatedButton.icon(
-                  onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>WebViewApp()));},
-                  icon: Icon( Icons.cases_sharp, color: Colors.white, size: 42.0,),
-                  label: Text('Job Pool'),
-                  style: ElevatedButton.styleFrom(primary: Colors.indigo,textStyle: const TextStyle(fontSize: 30),),
-                ),),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height: MediaQuery.of(context).size.width * 0.1,
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
+
+          child: Center(
+
+            child: Column(
+              children: [
+
+                new Image.network(
+                    'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_480/https://erovet.eu/wp-content/uploads/2020/02/LOGO-EROVET-480x144.jpg'),
+
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: MediaQuery.of(context).size.width * 0.2,
+                  child:   ElevatedButton.icon(
+                    onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>WebViewApp()));},
+                    icon: Icon( Icons.cases_sharp, color: Colors.white, size: 42.0,),
+                    label: Text('Job Pool'),
+                    style: ElevatedButton.styleFrom(primary: Colors.indigo,textStyle: const TextStyle(fontSize: 30),),
+                  ),),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: MediaQuery.of(context).size.width * 0.1,
+                ),
+                Container(
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    height:MediaQuery.of(context).size.width * 0.2,
+                    child:ElevatedButton.icon(
+                      onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>InternshipApp()));},
+                      icon: Icon( Icons.change_circle_outlined, color: Colors.white, size: 42.0,),
+                      label: Text('Internships Abroad'),
+                      style: ElevatedButton.styleFrom(primary: Colors.amberAccent,textStyle: const TextStyle(fontSize: 30),),
+                    )
+                )
+                ,
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: MediaQuery.of(context).size.width * 0.1,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height:MediaQuery.of(context).size.width * 0.2,
+                  child:
+                  ElevatedButton.icon(
+                    onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>VideosApp()));},
+                    icon: Icon( Icons.play_arrow_outlined, color: Colors.white, size: 42.0,),
+                    label: Text('Video Testimonies'),
+                    style: ElevatedButton.styleFrom(primary: Colors.red,textStyle: const TextStyle(fontSize: 30),),
+                  ),),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: MediaQuery.of(context).size.width * 0.1,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height:MediaQuery.of(context).size.width * 0.2,
+                  child:
+                  ElevatedButton.icon(
+                    onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ShareIdeasPageApp()));},
+                    icon: Icon( Icons.share, color: Colors.white, size: 42.0,),
+                    label: Text('Share Your Ideas'),
+                    style: ElevatedButton.styleFrom(primary: Colors.black,textStyle: const TextStyle(fontSize: 30),),
+                  ),),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: MediaQuery.of(context).size.width * 0.1,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height:MediaQuery.of(context).size.width * 0.2,
+                  child:
+                  ElevatedButton.icon(
+                    onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CoursesApp()));},
+                    icon: Icon( Icons.cast_for_education_outlined, color: Colors.white, size: 42.0,),
+                    label: Text('Courses'),
+                    style: ElevatedButton.styleFrom(primary: Colors.green,textStyle: const TextStyle(fontSize: 30)),
+                  ),),
+              ],
             ),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.9,
-              height:MediaQuery.of(context).size.width * 0.2,
-              child:ElevatedButton.icon(
-              onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>InternshipApp()));},
-              icon: Icon( Icons.change_circle_outlined, color: Colors.white, size: 42.0,),
-              label: Text('Internships Abroad'),
-              style: ElevatedButton.styleFrom(primary: Colors.amberAccent,textStyle: const TextStyle(fontSize: 30),),
-            )
-          )
-              ,
-              Container(
-                width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.width * 0.1,
-              ),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.9,
-            height:MediaQuery.of(context).size.width * 0.2,
-            child:
-              ElevatedButton.icon(
-                onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>VideosApp()));},
-                icon: Icon( Icons.play_arrow_outlined, color: Colors.white, size: 42.0,),
-                label: Text('Video Testimonies'),
-                style: ElevatedButton.styleFrom(primary: Colors.red,textStyle: const TextStyle(fontSize: 30),),
-              ),),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.9,
-            height: MediaQuery.of(context).size.width * 0.1,
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.9,
-            height:MediaQuery.of(context).size.width * 0.2,
-            child:
-              ElevatedButton.icon(
-                onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ShareIdeasPageApp()));},
-                icon: Icon( Icons.share, color: Colors.white, size: 42.0,),
-                label: Text('Share Your Ideas'),
-                style: ElevatedButton.styleFrom(primary: Colors.black,textStyle: const TextStyle(fontSize: 30),),
-              ),),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.9,
-            height: MediaQuery.of(context).size.width * 0.1,
-          ),
-          Container(
-            width: MediaQuery.of(context).size.width * 0.9,
-            height:MediaQuery.of(context).size.width * 0.2,
-            child:
-              ElevatedButton.icon(
-                onPressed: (){ Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CoursesApp()));},
-                icon: Icon( Icons.cast_for_education_outlined, color: Colors.white, size: 42.0,),
-                label: Text('Courses'),
-                style: ElevatedButton.styleFrom(primary: Colors.green,textStyle: const TextStyle(fontSize: 30)),
-              ),),
-            ],
           ),
         ),
       )

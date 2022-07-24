@@ -19,7 +19,7 @@ class _InternshipState extends State<Internship> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://erovet.eu/resources/services/erovet-mobility-network/',
+          initialUrl: 'https://erovet.eu/resources/services/erovet-mobility-network/?appview=true',
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
           },

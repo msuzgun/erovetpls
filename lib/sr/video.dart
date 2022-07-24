@@ -19,7 +19,7 @@ class _VideosState extends State<Videos> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://erovet.eu/',
+          initialUrl: 'https://erovet.eu/resources/deliverables/finding-your-way/?appview=true',
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
           },

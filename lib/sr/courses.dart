@@ -19,7 +19,7 @@ class _CoursesState extends State<Courses> {
     return Stack(
       children: [
         WebView(
-          initialUrl: 'https://www.e2bm.erovet.eu/login/index.php',
+          initialUrl: 'https://erovet.eu/resources/services/?appview=true',
           onWebViewCreated: (webViewController) {
             widget.controller.complete(webViewController);
           },
